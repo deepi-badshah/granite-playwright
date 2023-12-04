@@ -1,3 +1,4 @@
+import { STORAGE_STATE } from "../../playwright.config";
 import { test } from "../fixtures";
 
 test.describe("Login page", () => {
@@ -11,5 +12,6 @@ test.describe("Login page", () => {
       password: "welcome",
       username: "Oliver Smith",
     });
+    page.context().storageState({ path: STORAGE_STATE });
   });
 });
