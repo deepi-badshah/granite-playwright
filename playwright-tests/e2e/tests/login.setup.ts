@@ -12,6 +12,6 @@ test.describe("Login page", () => {
       password: "welcome",
       username: "Oliver Smith",
     });
-    page.context().storageState({ path: STORAGE_STATE });
+    await page.context().storageState({ path: STORAGE_STATE });
   });
 });
