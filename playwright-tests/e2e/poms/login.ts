@@ -23,6 +23,7 @@ export default class LoginPage {
   };
 }
 
+
 // create by me just to recall the syntax
 class VerifyUser {
   page: Page
